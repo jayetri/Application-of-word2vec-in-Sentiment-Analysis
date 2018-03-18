@@ -44,6 +44,10 @@ for i in xrange(nDev):
 
 # Try our regularization parameters
 results = []
+bestReg = None
+bestWt = None
+bestAcc = 0.0
+
 for regularization in REGULARIZATION:
     random.seed(3141)
     np.random.seed(59265)
